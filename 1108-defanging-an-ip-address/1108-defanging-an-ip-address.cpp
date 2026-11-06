@@ -2,7 +2,8 @@ class Solution {
 public:
     string defangIPaddr(string address) {
         string s;
-        for (int i = 0 ; i < address.length() ;i++){
+        int n = address.length();
+        for (int i = 0 ; i < n ;i++){
             if (address[i]=='.'){
                 s+="[.]";
             }
